@@ -1,18 +1,26 @@
 <template>
   <div>
     <TwoCol>
-      <template #left>
-        <h5 class="q-my-sm">Title</h5>
-        <p>
-          To use JavaScript Standard Style please install JavaScript Standard Style by running 'npm
-          install standard' in the workspace folder Website or globally using 'npm install -g
-          standard'. You need to reopen the workspace after installing JavaScript Standard Style.
-        </p>
-        <q-btn style="max-width: 260px" class="q-mx-auto" label="CTA Button" rounded outline />
+      <template #right>
+        <div class="flex column">
+          <h5 class="q-my-sm">{{ title }}</h5>
+          <p v-if="subtitle">-- {{ subtitle }}</p>
+          <p>{{ text }}</p>
+          <q-btn
+            v-if="ctaLink"
+            :href="ctaLink"
+            style="max-width: 260px"
+            class="q-mx-auto"
+            :label="ctaText"
+            rounded
+            outline
+            target="_blank"
+          />
+        </div>
       </template>
 
-      <template #right>
-        <q-img src="img/preview.jpg" />
+      <template #left>
+        <q-img :src="imageSrc" style="max-height: 300px" />
       </template>
     </TwoCol>
   </div>
@@ -20,6 +28,18 @@
 
 <script setup>
 import TwoCol from './TwoCol.vue'
+import { defineProps } from 'vue'
+
+defineProps({
+  title: { default: 'Title' },
+  subtitle: { default: '' },
+  text: {
+    default: 'To use JavaScript Standard Style please install JavaScript Standard Style by running',
+  },
+  imageSrc: { default: '/img/preview.jpg' },
+  ctaLink: { default: '' },
+  ctaText: { default: 'CTA Button' },
+})
 </script>
 
 <style lang="scss" scoped></style>
