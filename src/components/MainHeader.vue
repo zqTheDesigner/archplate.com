@@ -50,7 +50,10 @@
 
     <!-- Logo -->
     <div class="col text-center">
-      <a href="/"><h5 class="q-my-none">Archplate</h5></a>
+      <a href="/" class="row no-wrap justify-center text-center"
+        ><q-img src="logo.svg" width="26px" />
+        <h5 class="q-my-none">ArchPlate 橋版畫</h5></a
+      >
     </div>
 
     <!-- Desktop Menu - Right -->

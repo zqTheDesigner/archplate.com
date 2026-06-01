@@ -14,13 +14,13 @@
             :label="ctaText"
             rounded
             outline
-            target="_blank"
+            :target="ctaLink.includes('http') ? '_blank' : '_self'"
           />
         </div>
       </template>
 
       <template #left>
-        <q-img :src="imageSrc" style="max-height: 300px" />
+        <q-img :src="'img/' + imageSrc" style="max-height: 300px" />
       </template>
     </TwoCol>
   </div>
@@ -36,7 +36,7 @@ defineProps({
   text: {
     default: 'To use JavaScript Standard Style please install JavaScript Standard Style by running',
   },
-  imageSrc: { default: '/img/preview.jpg' },
+  imageSrc: { default: '/preview.jpg' },
   ctaLink: { default: '' },
   ctaText: { default: 'CTA Button' },
 })

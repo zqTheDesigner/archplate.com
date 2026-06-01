@@ -7,7 +7,7 @@
         :text="artist.info"
         :cta-link="artist.link"
         :image-src="artist.picture"
-        cta-text="More"
+        cta-text="Detail"
       />
       <!-- <router-link :to="'/artists/' + artist.handle">
         {{ artist.name }}

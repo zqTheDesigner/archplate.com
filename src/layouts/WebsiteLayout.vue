@@ -8,7 +8,7 @@
       style="min-height: calc(100vh - 250px) !important"
       class="q-mt-lg flex justify-center items-center"
     >
-      <router-view style="max-width: 1200px; width: 100%" />
+      <router-view style="max-width: 1200px; width: 100%" class="q-mx-md" />
     </q-page-container>
 
     <MainFooter />

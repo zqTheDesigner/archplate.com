@@ -35,7 +35,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import { qiao } from 'src/data/qiao'
+import qiao from 'src/data/artists/qiao'
 const tab = ref('about')
 </script>
 

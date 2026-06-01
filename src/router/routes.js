@@ -1,8 +1,9 @@
 const menus = [
   { label: 'About', path: 'about' },
   { label: 'Artists', path: 'artists' },
+  { label: 'Workshops', path: 'workshops', new: false },
   { label: 'Events', path: 'events', new: false },
-  { label: 'Media', path: 'media', new: 'true' },
+  { label: 'Media', path: 'media', new: true },
 
   // { label: 'OpenPM - Blog', path: 'blog' },
   { label: 'Contact', path: 'contact' },
@@ -21,7 +22,15 @@ const routes = [
       { path: 'events', component: () => import('pages/EventsPage.vue') },
       { path: 'contact', component: () => import('pages/ContactPage.vue') },
       { path: 'qiao', component: () => import('pages/QiaoPage.vue') },
+      { path: 'archplate_at_agc', component: () => import('pages/EventPage.vue') },
+      { path: 'workshops', component: () => import('pages/WorkshopsPage.vue') },
     ],
+  },
+  {path:'/tools',
+    component: () => import('layouts/WebsiteLayout.vue'),
+    children:[
+      { path: 'pixel_calculator', component: () => import('pages/PixelCalculator.vue') },
+    ]
   },
 
   // Always leave this as last one,

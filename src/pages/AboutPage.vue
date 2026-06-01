@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center">
-    <div style="max-width: 800px">
+    <div style="max-width: 800px" class="q-mx-md">
       <p>
         At ArchPlate, we approach etching as both an artistic practice and an evolving field of
         research—expanding how printmaking can be created, experienced, and understood today.
