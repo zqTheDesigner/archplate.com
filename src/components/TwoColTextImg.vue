@@ -1,7 +1,7 @@
 <template>
   <div>
-    <TwoCol>
-      <template #right>
+    <TwoCol :reverse="isReversed">
+      <template #[textSlot]>
         <div class="flex column">
           <h5 class="q-my-sm">{{ title }}</h5>
           <p v-if="subtitle">-- {{ subtitle }}</p>
@@ -19,7 +19,7 @@
         </div>
       </template>
 
-      <template #left>
+      <template #[imageSlot]>
         <q-img :src="'img/' + imageSrc" style="max-height: 300px" />
       </template>
     </TwoCol>
@@ -28,9 +28,9 @@
 
 <script setup>
 import TwoCol from './TwoCol.vue'
-import { defineProps } from 'vue'
+import { defineProps, computed } from 'vue'
 
-defineProps({
+const props = defineProps({
   title: { default: 'Title' },
   subtitle: { default: '' },
   text: {
@@ -39,7 +39,15 @@ defineProps({
   imageSrc: { default: '/preview.jpg' },
   ctaLink: { default: '' },
   ctaText: { default: 'CTA Button' },
+  order: { default: null },
 })
+
+const isReversed = computed(() => {
+  return props.order !== null && props.order % 2 !== 0
+})
+
+const textSlot = computed(() => (isReversed.value ? 'left' : 'right'))
+const imageSlot = computed(() => (isReversed.value ? 'right' : 'left'))
 </script>
 
 <style lang="scss" scoped></style>

@@ -1,4 +1,11 @@
 const media = [
+{
+  title: 'TVB News - 2026 May. 14',
+  subtitle: '13th Affordable Art Fair Opens in Hong Kong',
+  link: 'https://youtu.be/b-K_UBe43CQ?t=145',
+  picture: 'media-tvb-1.jpg',
+  info: 'TVB News featured Zhang Qiao during the 13th Affordable Art Fair Hong Kong, highlighting his electro-etching practice and live demonstration of the etching and printmaking process at the fair.',
+},
   {
     title: '联合早报 - 2026 Jan. 19',
     subtitle: '组屋里的艺术工作室 生活即课堂 创作即日常',

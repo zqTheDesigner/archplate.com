@@ -6,21 +6,22 @@
         <TwoColTextImg
           v-for="(event, idx) in upcoming_events"
           :key="idx"
+          :order="idx"
           :title="event.title"
           :subtitle="event.subtitle"
           :text="event.info"
           :image-src="event.picture"
           :cta-link="event.link"
-          cta-text="More"
+          :cta-text="event.cta_text"
         />
       </div>
-      <hr />
     </div>
     <div>
       <h5 class="text-center">Past Events</h5>
       <TwoColTextImg
         v-for="(event, idx) in past_events"
         :key="idx"
+        :order="idx"
         :title="event.title"
         :subtitle="event.subtitle"
         :text="event.info"

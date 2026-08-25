@@ -32,12 +32,19 @@
           <ImageGallery :images="artist.works" />
         </div>
         <div v-if="artist.upcoming_exhibitions">
-          <h6>Up Coming Exhibitions</h6>
+          <!-- <h6>Up Coming Exhibitions</h6> -->
         </div>
         <h6>Exhibtions</h6>
-        <div v-for="(exhibition, idx) in artist.exhibitions" :key="idx">{{ exhibition.title }}</div>
-        <h6>Media</h6>
-        <div></div>
+        <div v-for="(exhibition, idx) in artist.exhibitions" :key="idx">
+          <p>
+            <i style="color: #888">{{ exhibition.time }}, </i>
+            {{ exhibition.title }}
+          </p>
+        </div>
+        <!-- <h6>Media</h6> -->
+        <div class="q-mb-xl">
+          <!-- Media content goes here -->
+        </div>
       </div>
     </div>
   </div>

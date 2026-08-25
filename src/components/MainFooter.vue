@@ -1,9 +1,14 @@
 <template>
-  <div class="bg-black text-white text-center">
+  <div class="bg-black text-white text-center float-bottom">
     <TwoCol>
       <template #left>
-        <div>
+        <div class="row flex justify-center items-center no-wrap">
+          <q-img src="logo.svg" style="width: 60px; height: 60px" alt="ArchPlate Logo" />
           <h5>ArchPlate</h5>
+        </div>
+      </template>
+      <template #right>
+        <div>
           <p>Email: qiao@archplate.com</p>
           <p>Call: +65 9069 7106</p>
 
@@ -16,10 +21,6 @@
               >小红书: 桥版画</a
             >
           </div>
-        </div>
-      </template>
-      <template #right>
-        <div>
           <!-- <form name="contact" method="POST" data-netlify="true">
             <p>
               <label>Name <input type="text" name="name" /></label>
@@ -33,9 +34,9 @@
           </form> -->
 
           <!-- Use @submit.prevent so the page doesn't refresh -->
-          <q-form name="contact" @submit.prevent="handleSubmit">
-            <!-- CRITICAL: This tells Netlify which form is being submitted -->
-            <input type="hidden" name="form-name" value="contact" />
+          <!-- <q-form name="contact" @submit.prevent="handleSubmit"> -->
+          <!-- CRITICAL: This tells Netlify which form is being submitted -->
+          <!-- <input type="hidden" name="form-name" value="contact" />
 
             <q-input
               v-model="form.name"
@@ -55,7 +56,7 @@
             />
 
             <q-btn type="submit" label="Send" color="white" class="text-black" />
-          </q-form>
+          </q-form> -->
         </div>
       </template>
     </TwoCol>
@@ -64,31 +65,31 @@
 
 <script setup>
 import TwoCol from './TwoCol.vue'
-import { ref } from 'vue'
-const form = ref({
-  name: '',
-  email: '',
-})
+// import { ref } from 'vue'
+// const form = ref({
+//   name: '',
+//   email: '',
+// })
 
-const handleSubmit = async () => {
-  try {
-    const body = new URLSearchParams({
-      'form-name': 'contact', // Must match your form name attribute
-      ...form.value,
-    }).toString()
+// const handleSubmit = async () => {
+//   try {
+//     const body = new URLSearchParams({
+//       'form-name': 'contact', // Must match your form name attribute
+//       ...form.value,
+//     }).toString()
 
-    await fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body,
-    })
+//     await fetch('/', {
+//       method: 'POST',
+//       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+//       body,
+//     })
 
-    alert('Form submitted successfully!')
-  } catch (error) {
-    alert('Error submitting form')
-    console.log(error)
-  }
-}
+//     alert('Form submitted successfully!')
+//   } catch (error) {
+//     alert('Error submitting form')
+//     console.log(error)
+//   }
+// }
 </script>
 
 <style lang="scss" scoped></style>

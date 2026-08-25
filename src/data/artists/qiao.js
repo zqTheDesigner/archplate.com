@@ -3,13 +3,15 @@ const qiao = {
   profile: 'qiao/qiao.jpg',
   position: 'Printmaking Artist, Funder of ArchPlate',
   about:
-    'Qiao is a printmaking artist graduated from Lasalle College of the Arts (Singapore), specializing in innovative and traditional printmaking techniques. With a diverse background in advertising, design, marketing, and computer programming, Zhang Qiao brings a unique interdisciplinary approach to art. Known for pioneering electro etching—a safer and more accessible alternative to traditional etching. His prints has been exhibited in Singapore and Japan. Proficient in woodblock printing, screen printing, and lithography, Zhang Qiao blends technical expertise with creative exploration to push the boundaries of printmaking.',
-  upcoming_exhibitions: [{ title: 'AAF HK 2026', time: '2026 May. 13 - 16', link: '' }],
+    'Qiao is a Singaporean etching artist and graduate of LASALLE College of the Arts. He is the founder of ArchPlate, an independent studio focused on electro-etching, material experimentation, and printmaking education. Drawing on his interdisciplinary background in design, technology, and cultural research, Qiao develops locally grounded approaches to electro-etching that make the medium safer and more accessible while expanding its creative possibilities. His practice encompasses studio research, exhibitions, university teaching, artist talks, and community workshops. Rather than replacing conventional etching, his work explores how emerging processes can coexist with and contribute to the continuing development of traditional printmaking. His works have been exhibited in Singapore and Japan.',
+  upcoming_exhibitions: [],
   exhibitions: [
-    { title: 'Dialogue of differences', time: '2026 Jan - Mar', link: '' },
-    { title: 'Art Picnic', time: '2026-Jan-25', link: '' },
-    { title: 'Art SG 2026', time: '2026-Jan-23', link: '' },
-    { title: 'AAF SG 2025', time: '2025-Oct', link: '' },
+    { title: 'Of Light and Matter', time: '2026 Jul', link: '' },
+    { title: 'AAF HK 2026', time: '2026 May', link: '' },
+    { title: 'Dialogue of differences', time: '2026 Jan', link: '' },
+    { title: 'Art Picnic', time: '2026 Jan', link: '' },
+    { title: 'Art SG 2026', time: '2026 Jan', link: '' },
+    { title: 'AAF SG 2025', time: '2025 Oct', link: '' },
   ],
 
   works: [

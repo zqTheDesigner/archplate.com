@@ -21,9 +21,10 @@
       >
         <q-tab-panel name="about"> </q-tab-panel>
         <q-tab-panel name="statement"> </q-tab-panel>
+        {{qiao.exhibitions}}
         <q-tab-panel name="exhibitions">
-          <div v-for="(exhibition, exhibitionk) in qiao.exhibitions" :key="exhibitionk">
-            {{ exhibition.title }}
+          <div v-for="(exhibition, exhibitionLink) in qiao.exhibitions" :key="exhibitionLink">
+            <p>{{ exhibition }}, {{ exhibition.title }}</p>
           </div>
         </q-tab-panel>
         <q-tab-panel name="works"> </q-tab-panel>

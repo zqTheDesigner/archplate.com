@@ -6,8 +6,15 @@
       <div>
         <div></div>
         <p class="q-mx-auto">
-          At ArchPlate, we approach etching as both an artistic practice and an evolving field of
-          research—expanding how printmaking can be created, experienced, and understood today.
+          ArchPlate is a Singapore-based printmaking studio founded by etching artist
+          Zhang Qiao. We bring together artistic practice, material research, and education to
+          develop safer, more accessible, and creatively expressive approaches to etching.
+        </p>
+
+        <p class="q-mx-auto">
+          Our work focuses on electro-etching and experimental printmaking processes. Through
+          sustained studio research, we explore how contemporary tools and materials can extend the
+          possibilities of etching while remaining connected to its traditional foundations.
         </p>
       </div>
       <ThreeColImages
@@ -20,28 +27,28 @@
         :img3="artists[1].picture"
         :title3="artists[1].name"
         :href3="artists[1].link"
+        class="q-my-xl"
       />
       <!-- <ThreeColImages :img1="artists[0].picture" class="gt-sm" /> -->
-      <div class="flex column items-center">
+      <div class="flex column items-center q-mb-xl">
         <p>
-          Our work extends beyond image-making. It brings together studio practice, academic
-          research, and material development to explore safer and more accessible approaches to
-          etching. Through ongoing experimentation, we develop alternative processes that reduce the
-          need for hazardous chemicals while opening new possibilities in mark-making and visual
-          expression.
+          From introductory experiences to advanced technical courses, our workshops make etching
+          approachable for artists, students, educators, beginners, and wider communities.
+          Participants learn through hands-on plate-making, electro-etching, and printmaking in a
+          supportive studio environment.
         </p>
 
         <p>
-          At the same time, ArchPlate is committed to public engagement. Through workshops,
-          educational programs, and collaborative projects, we aim to make printmaking more
-          approachable—bridging the gap between traditional studio practices and wider audiences,
-          including beginners, students, and communities.
+          ArchPlate’s work extends beyond the studio through exhibitions, university teaching,
+          artist talks, educational programmes, and collaborative projects. By connecting
+          printmaking with materials, technology, history, and cultural research, we approach
+          technique as both a creative process and a form of inquiry.
         </p>
 
         <p>
-          Rather than replacing conventional methods, ArchPlate contributes to the broader evolution
-          of printmaking—offering new pathways that coexist with established practices, while
-          shaping a more sustainable and accessible future for the medium.
+          Rather than replacing conventional etching, ArchPlate develops new methods that coexist
+          with established practices. Our aim is to support knowledge exchange and contribute to a
+          more accessible, responsible, and connected printmaking ecosystem in Singapore.
         </p>
       </div>
     </div>
@@ -53,7 +60,7 @@ import LandingBanner from 'src/components/LandingBanner.vue'
 // import TwoColTextImg from 'src/components/TwoColTextImg.vue'
 import ThreeColImages from 'src/components/ThreeColImages.vue'
 import artists from 'src/data/artists'
-import {upcoming_events as events} from 'src/data/events'
+import { upcoming_events as events } from 'src/data/events'
 </script>
 
 <style lang="scss" scoped></style>

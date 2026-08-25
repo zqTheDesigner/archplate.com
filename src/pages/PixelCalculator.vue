@@ -5,7 +5,7 @@
     ```
     <div class="controls">
       <label class="camera-btn">
-        📷 Take Photo / Select Image
+        📷 Take Photo
         <input
           type="file"
           accept="image/*"
@@ -13,6 +13,11 @@
           @change="handleImageUpload"
           hidden
         />
+      </label>
+
+      <label class="camera-btn">
+        🖼 Select Existing Image
+        <input type="file" accept="image/*" @change="handleImageUpload" hidden />
       </label>
 
       <div class="slider-section">
