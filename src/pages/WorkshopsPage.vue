@@ -1,17 +1,37 @@
 <template>
   <div>
     <div class="flex no-wrap column justify-center">
-      <div style="border-radius: 0.5rem" class="bg-amber-3">
-        <p class="q-ma-md text-center">
+      <div
+        style="border-radius: 0.5rem"
+        class="flex bg-amber-3 text-center justify-center"
+      >
+        <p class="q-ma-md" style="max-width: 600px">
           <b
-            >For workshop / event appointment, kindly contact Qiao via Email or WhatsApp number
-            below</b
+            >For private workshop / event appointment, kindly contact Qiao via Email or
+            WhatsApp number below</b
           >
         </p>
       </div>
       <div class="text-center">
-        <h6 class="q-mb-md">Email: <b>qiao@archplate.com</b></h6>
-        <h6 class="q-ma-none">Call: <b>+65 90697 196</b></h6>
+        <h6 class="q-mb-md q-mt-md">
+          Email:
+          <b
+            ><a
+              href="mailto:qiao@archplate.com"
+              class="text-dark"
+              style="text-decoration: none"
+              >qiao@archplate.com</a
+            ></b
+          >
+        </h6>
+        <h6 class="q-ma-none">
+          Call:
+          <b
+            ><a href="tel:+6590697196" class="text-dark" style="text-decoration: none"
+              >+65 9069 7196</a
+            ></b
+          >
+        </h6>
       </div>
     </div>
 
@@ -32,8 +52,8 @@
 </template>
 
 <script setup>
-import TwoColTextImg from 'src/components/TwoColTextImg.vue'
-import workshops from '../data/workshops'
+import TwoColTextImg from "src/components/TwoColTextImg.vue"
+import workshops from "../data/workshops"
 </script>
 
 <style lang="scss" scoped></style>
